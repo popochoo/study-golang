@@ -2,6 +2,7 @@ package http
 
 import (
 	"errors"
+	"fmt"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -34,6 +35,8 @@ func (s *HTTPServer) StartServer() error {
 
 		return err
 	}
+
+	fmt.Println("Changes commit")
 
 	return nil
 }
